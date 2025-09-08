@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -21,23 +22,23 @@
             background-attachment: fixed;
             overflow-x: hidden;
         }
-        
+
         a {
             text-decoration: none;
             color: #64ffda;
             transition: color 0.3s ease;
         }
-        
+
         a:hover {
             color: #4fc1b5;
         }
-        
+
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
         }
-        
+
         .btn {
             display: inline-block;
             padding: 12px 30px;
@@ -51,28 +52,28 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(100, 255, 218, 0.2);
         }
-        
+
         .btn:hover {
             background: #4fc1b5;
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(100, 255, 218, 0.3);
         }
-        
+
         .btn-outline {
             background: transparent;
             border: 2px solid #64ffda;
             color: #64ffda;
         }
-        
+
         .btn-outline:hover {
             background: #64ffda;
             color: #0a192f;
         }
-        
+
         section {
             padding: 80px 0;
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 50px;
@@ -83,12 +84,12 @@
             transform: translateY(20px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-        
+
         .section-title.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .section-title::after {
             content: '';
             position: absolute;
@@ -100,7 +101,7 @@
             background: #64ffda;
             border-radius: 2px;
         }
-        
+
         /* Header Styles */
         header {
             background: rgba(10, 25, 47, 0.95);
@@ -112,14 +113,14 @@
             backdrop-filter: blur(5px);
             transition: all 0.3s ease;
         }
-        
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 0;
         }
-        
+
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
@@ -128,39 +129,39 @@
             transform: translateX(-20px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-        
+
         .logo.visible {
             opacity: 1;
             transform: translateX(0);
         }
-        
+
         .nav-links {
             display: flex;
             list-style: none;
         }
-        
+
         .nav-links li {
             margin-left: 30px;
             opacity: 0;
             transform: translateY(-10px);
             transition: opacity 0.5s ease, transform 0.5s ease;
         }
-        
+
         .nav-links li.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .nav-links a {
             color: #ccd6f6;
             font-weight: 600;
             transition: color 0.3s ease;
         }
-        
+
         .nav-links a:hover {
             color: #64ffda;
         }
-        
+
         /* About Section */
         .about {
             padding-top: 150px;
@@ -169,27 +170,27 @@
             border-radius: 0 0 50% 50% / 30%;
             margin-bottom: 50px;
         }
-        
+
         .about-content {
             display: flex;
             align-items: center;
             gap: 50px;
         }
-        
+
         .profile-container {
             flex: 1;
-            display: flex;
+            display:flex;
             justify-content: center;
             opacity: 0;
             transform: translateX(-50px);
             transition: opacity 1s ease, transform 1s ease;
         }
-        
+
         .profile-container.visible {
             opacity: 1;
             transform: translateX(0);
         }
-        
+
         .round-frame {
             width: 300px;
             height: 300px;
@@ -199,36 +200,44 @@
             box-shadow: 0 0 30px rgba(100, 255, 218, 0.4);
             animation: float 6s ease-in-out infinite;
         }
-        
+
         @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
         }
-        
+
         .round-frame img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
-        
+
         .round-frame:hover img {
             transform: scale(1.05);
         }
-        
+
         .about-text {
             flex: 1;
             opacity: 0;
             transform: translateX(50px);
             transition: opacity 1s ease, transform 1s ease;
         }
-        
+
         .about-text.visible {
             opacity: 1;
             transform: translateX(0);
         }
-        
+
         .about h1 {
             font-size: 3rem;
             margin-bottom: 20px;
@@ -238,7 +247,7 @@
             white-space: nowrap;
             letter-spacing: .05em;
         }
-        
+
         .about p {
             font-size: 1.1rem;
             margin-bottom: 15px;
@@ -248,12 +257,12 @@
             transform: translateY(20px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-        
+
         .about p.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .about-buttons {
             display: flex;
             gap: 20px;
@@ -262,12 +271,12 @@
             transform: translateY(20px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-        
+
         .about-buttons.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         /* Education Section */
         .education {
             background: rgba(23, 42, 69, 0.5);
@@ -275,7 +284,7 @@
             margin: 30px 0;
             box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
         }
-        
+
         .education-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -283,7 +292,7 @@
             max-width: 900px;
             margin: 0 auto;
         }
-        
+
         .education-item {
             background: rgba(17, 34, 64, 0.8);
             padding: 30px;
@@ -297,17 +306,17 @@
             transform: translateY(50px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-        
+
         .education-item.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .education-item:hover {
             transform: translateY(-10px);
             border-color: #64ffda;
         }
-        
+
         .education-item::before {
             content: '';
             position: absolute;
@@ -317,38 +326,38 @@
             height: 100%;
             background: #64ffda;
         }
-        
+
         .education-icon {
             font-size: 2.5rem;
             color: #64ffda;
             margin-bottom: 20px;
         }
-        
+
         .education-item h3 {
             font-size: 1.5rem;
             margin-bottom: 10px;
             color: #ccd6f6;
         }
-        
+
         .education-item .institution {
             color: #64ffda;
             font-weight: 600;
             margin-bottom: 10px;
             display: block;
         }
-        
+
         .education-item .date {
             color: #8892b0;
             margin-bottom: 15px;
             display: block;
             font-style: italic;
         }
-        
+
         .education-item p {
             color: #8892b0;
             margin-bottom: 15px;
         }
-        
+
         /* Skills Section with Percentage Bars */
         .skills {
             background: rgba(23, 42, 69, 0.5);
@@ -356,25 +365,25 @@
             margin: 30px 0;
             box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
         }
-        
+
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
         }
-        
+
         .skill-category {
             margin-bottom: 30px;
             opacity: 0;
             transform: translateY(30px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-        
+
         .skill-category.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .skill-category h3 {
             font-size: 1.5rem;
             margin-bottom: 20px;
@@ -382,34 +391,34 @@
             padding-bottom: 10px;
             border-bottom: 2px solid #1d3a6b;
         }
-        
+
         .skill-item {
             margin-bottom: 20px;
         }
-        
+
         .skill-info {
             display: flex;
             justify-content: space-between;
             margin-bottom: 8px;
         }
-        
+
         .skill-name {
             font-weight: 600;
             color: #ccd6f6;
         }
-        
+
         .skill-percentage {
             color: #64ffda;
             font-weight: 600;
         }
-        
+
         .skill-bar {
             height: 10px;
             background: #1d3a6b;
             border-radius: 5px;
             overflow: hidden;
         }
-        
+
         .skill-progress {
             height: 100%;
             background: #64ffda;
@@ -418,14 +427,14 @@
             width: 0;
             transition: width 1.5s ease-in-out;
         }
-        
+
         /* Projects Section */
         .projects-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-        
+
         .project {
             background: rgba(17, 34, 64, 0.8);
             border-radius: 15px;
@@ -437,48 +446,48 @@
             transform: translateY(50px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-        
+
         .project.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .project:hover {
             transform: translateY(-10px);
             border-color: #64ffda;
         }
-        
+
         .project-img {
             height: 200px;
             overflow: hidden;
         }
-        
+
         .project-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
-        
+
         .project:hover .project-img img {
             transform: scale(1.1);
         }
-        
+
         .project-info {
             padding: 25px;
         }
-        
+
         .project-info h3 {
             margin-bottom: 10px;
             font-size: 1.5rem;
             color: #ccd6f6;
         }
-        
+
         .project-info p {
             color: #8892b0;
             margin-bottom: 15px;
         }
-        
+
         /* Contact Section */
         .contact {
             background: rgba(23, 42, 69, 0.5);
@@ -486,19 +495,19 @@
             margin: 30px 0;
             box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
         }
-        
+
         .contact-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 50px;
         }
-        
+
         .contact-info {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-        
+
         .contact-item {
             display: flex;
             align-items: center;
@@ -507,12 +516,12 @@
             transform: translateX(-30px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-        
+
         .contact-item.visible {
             opacity: 1;
             transform: translateX(0);
         }
-        
+
         .contact-item i {
             font-size: 1.5rem;
             color: #64ffda;
@@ -524,13 +533,13 @@
             align-items: center;
             justify-content: center;
         }
-        
+
         .social-buttons {
             display: flex;
             gap: 15px;
             margin-top: 20px;
         }
-        
+
         .social-button {
             display: flex;
             align-items: center;
@@ -543,26 +552,26 @@
             transition: all 0.3s ease;
             font-weight: 600;
         }
-        
+
         .social-button:hover {
             background: #64ffda;
             color: #0a192f;
             transform: translateY(-3px);
         }
-        
+
         .social-button i {
             background: transparent;
             width: auto;
             height: auto;
             font-size: 1.2rem;
         }
-        
+
         .contact-form {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-        
+
         .form-group {
             display: flex;
             flex-direction: column;
@@ -571,17 +580,39 @@
             transform: translateX(30px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-        
+
+        .form-group-button {
+            background-color: #64fff7;
+            /* Bright aqua */
+            color: #0b0c10;
+            /* Dark text for contrast */
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(100, 255, 247, 0.4);
+        }
+
+        .form-group-button:hover {
+            background-color: #50eae5;
+            /* Slightly darker on hover */
+            box-shadow: 0 8px 20px rgba(100, 255, 247, 0.6);
+            transform: translateY(-2px);
+        }
+
         .form-group.visible {
             opacity: 1;
             transform: translateX(0);
         }
-        
+
         .form-group label {
             font-weight: 600;
             color: #ccd6f6;
         }
-        
+
         .form-group input,
         .form-group textarea {
             padding: 15px;
@@ -592,18 +623,18 @@
             color: #ccd6f6;
             transition: border-color 0.3s ease;
         }
-        
+
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
             border-color: #64ffda;
         }
-        
+
         .form-group textarea {
             min-height: 150px;
             resize: vertical;
         }
-        
+
         /* Footer */
         footer {
             background: #0a192f;
@@ -613,7 +644,7 @@
             border-radius: 20px 20px 0 0;
             margin-top: 50px;
         }
-        
+
         .social-links {
             display: flex;
             justify-content: center;
@@ -621,7 +652,7 @@
             margin: 20px 0;
             flex-wrap: wrap;
         }
-        
+
         .social-links a {
             color: #ccd6f6;
             font-size: 1.8rem;
@@ -637,68 +668,69 @@
             transform: translateY(20px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-        
+
         .social-links a.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .social-links a:hover {
             transform: translateY(-5px);
             background: rgba(100, 255, 218, 0.2);
             color: #64ffda;
             box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
         }
-        
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-            
+
             .about-content {
                 flex-direction: column;
                 text-align: center;
             }
-            
+
             .about h1 {
                 font-size: 2.5rem;
             }
-            
+
             .section-title {
                 font-size: 2rem;
             }
-            
+
             .about-buttons {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             .round-frame {
                 width: 250px;
                 height: 250px;
             }
-            
+
             .social-links {
                 gap: 20px;
             }
-            
+
             .social-links a {
                 width: 50px;
                 height: 50px;
                 font-size: 1.5rem;
             }
-            
+
             .education-container {
                 grid-template-columns: 1fr;
             }
-            
+
             .social-buttons {
                 justify-content: center;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -722,28 +754,28 @@
             <div class="about-content">
                 <div class="profile-container">
                     <div class="round-frame">
-                        <img src="images/dp image.png" alt="Yasodhara Nipuni">
+                        <img src="images/pp1.jpeg" alt="Yasodhara Nipuni">
                     </div>
                 </div>
                 <div class="about-text">
                     <h1 id="typewriter">Hi, I'm Yasodhara Nipuni</h1>
-                    <p>An undergraduate in Computing and Information Systems at Sabaragamuwa University with a strong foundation in software development and IT solutions, complemented by a Human Resources Diploma from CIPM. Skilled in creating user-friendly digital solutions, with experience across software and IT systems. Passionate about learning new technologies, exploring emerging trends, and applying innovative approaches, while also enjoying reading and continuous professional growth.
-</p>
-                    
-                    
+                    <p>An undergraduate in Computing and Information Systems at Sabaragamuwa University with a strong
+                        foundation in software development and IT solutions, complemented by a Human Resources Diploma
+                        from CIPM. Skilled in creating user-friendly digital solutions, with experience across software
+                        and IT systems. Passionate about learning new technologies, exploring emerging trends, and
+                        applying innovative approaches, while also enjoying reading and continuous professional growth.
+                    </p>
+
+
                     <div class="about-buttons">
-  <a href="#projects" class="btn">View My Work</a>
-  
-  <!-- Use a safer filename (no spaces), add target + download -->
-  <a href="CV Resume.pdf" 
-     class="btn btn-outline" 
-     id="downloadCV" 
-     target="_blank" 
-     rel="noopener" 
-     download="CV_Resume.pdf">
-    Download CV
-  </a>
-</div>
+                        <a href="#projects" class="btn">View My Work</a>
+
+                        <!-- Use a safer filename (no spaces), add target + download -->
+                        <a href="https://drive.google.com/file/d/1v31yjjrQS5jMPmh8JZ2t71OxGjSl-WUf/view?usp=drive_link" class="btn btn-outline" id="downloadCV" target="_blank" rel="noopener"
+                            >
+                            Download CV
+                        </a>
+                    </div>
 
                 </div>
             </div>
@@ -760,15 +792,20 @@
                     <h3>BSc. Honours Degree in Computing & Information Systems</h3>
                     <span class="institution">Sabaragamuwa University of Sri Lanka</span>
                     <span class="date">undergraduate</span>
-                    <p>A comprehensive program covering software development, web technologies, databases, and IT systems. Includes hands-on experience through real-world projects, helping students build practical skills and a strong portfolio of applications.</p>
+                    <p>A comprehensive program covering software development, web technologies, databases, and IT
+                        systems. Includes hands-on experience through real-world projects, helping students build
+                        practical skills and a strong portfolio of applications.</p>
                 </div>
-                
+
                 <div class="education-item">
                     <i class="fas fa-certificate education-icon"></i>
                     <h3>DIPLOMA IN PROFESSIONAL HRM (DPHRM)</h3>
                     <span class="institution">Chartered Institute of Personnel Management Sri Lanka</span>
                     <span class="date">2023 - 2025</span>
-                    <p>A comprehensive Human Resources program covering HR management, employee relations, training and development, and performance management. Gained practical knowledge through case studies and real-world HR scenarios, developing skills to manage and support effective workplace practices.</p>
+                    <p>A comprehensive Human Resources program covering HR management, employee relations, training and
+                        development, and performance management. Gained practical knowledge through case studies and
+                        real-world HR scenarios, developing skills to manage and support effective workplace practices.
+                    </p>
                 </div>
             </div>
         </div>
@@ -809,7 +846,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="skill-category">
                     <h3>Backend Development</h3>
                     <div class="skill-item">
@@ -840,7 +877,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="skill-category">
                     <h3>Other Skills</h3>
                     <div class="skill-item">
@@ -941,34 +978,34 @@
                             <p>82, Welgama, Thiththapaththara.</p>
                         </div>
                     </div>
-                    
+
                     <!-- GitHub and LinkedIn Buttons -->
                     <div class="social-buttons">
                         <a href="https://github.com/Yasodhara-626" target="_blank" class="social-button">
                             <i class="fab fa-github"></i>
                             <span>GitHub</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/yasodhara-nipuni-52766437b/" target="_blank" class="social-button">
+                        <a href="https://www.linkedin.com/in/yasodhara-nipuni-52766437b/" target="_blank"
+                            class="social-button">
                             <i class="fab fa-linkedin"></i>
                             <span>LinkedIn</span>
                         </a>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form id="contact-form">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="text" name="user_name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="email" name="user_email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" placeholder="Your Message" required></textarea>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn">Send Message</button>
+                    <br>
+                    <button type="submit" class="form-group-button">Send Message</button>
                 </form>
+
             </div>
         </div>
     </section>
@@ -991,7 +1028,7 @@
         function typeWriter(element, text, speed) {
             let i = 0;
             element.innerHTML = "";
-            
+
             function type() {
                 if (i < text.length) {
                     element.innerHTML += text.charAt(i);
@@ -1001,38 +1038,32 @@
                     element.style.borderRight = 'none';
                 }
             }
-            
+
             type();
         }
 
         // Scroll animation for elements
         function animateOnScroll() {
             const elements = document.querySelectorAll('.section-title, .logo, .nav-links li, .profile-container, .about-text, .about p, .about-buttons, .education-item, .skill-category, .project, .contact-item, .form-group, .social-links a');
-            
+
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
                 const screenPosition = window.innerHeight / 1.3;
-                
+
                 if (elementPosition < screenPosition) {
                     element.classList.add('visible');
                 }
             });
         }
 
-        // CV Download functionality
-        document.getElementById('downloadCV').addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('CV download initiated! In a real application, this would download your CV file.');
-        });
-
         // Animate skill bars on scroll
         function animateSkillBars() {
             const skillBars = document.querySelectorAll('.skill-progress');
             const skillsSection = document.querySelector('.skills');
-            
+
             const skillsSectionPosition = skillsSection.getBoundingClientRect().top;
             const screenPosition = window.innerHeight / 1.3;
-            
+
             if (skillsSectionPosition < screenPosition) {
                 skillBars.forEach(bar => {
                     const width = bar.getAttribute('data-width');
@@ -1055,12 +1086,12 @@
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 if (targetId === '#') return;
-                
+
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     window.scrollTo({
@@ -1072,41 +1103,67 @@
         });
 
         // Initialize animations when page loads
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Start typewriter effect
             const typewriterElement = document.getElementById('typewriter');
             typeWriter(typewriterElement, "Hi, I'm Yasodhara Nipuni", 100);
-            
+
             // Initial check for elements in viewport
             animateOnScroll();
             animateSkillBars();
-            
+
             // Add scroll event listeners
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 animateOnScroll();
                 animateSkillBars();
                 updateNavbar();
             });
-            
+
             // Animate nav links with delay
             const navLinks = document.querySelectorAll('.nav-links li');
             navLinks.forEach((link, index) => {
                 link.style.transitionDelay = `${index * 0.1}s`;
             });
-            
+
             // Animate skill categories with delay
             const skillCategories = document.querySelectorAll('.skill-category');
             skillCategories.forEach((category, index) => {
                 category.style.transitionDelay = `${index * 0.2}s`;
             });
-            
+
             // Animate social links with delay
             const socialLinks = document.querySelectorAll('.social-links a');
             socialLinks.forEach((link, index) => {
                 link.style.transitionDelay = `${index * 0.1}s`;
             });
         });
+
+        // Handle contact form submit with EmailJS
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Send the form data via EmailJS
+            emailjs.sendForm("service_sm09ngn", "template_u5be2uz", this)
+                .then(function (response) {
+                    alert("Message sent successfully!");
+                }, function (error) {
+                    alert("Failed to send message. Please try again.");
+                    console.error("EmailJS Error:", error);
+                });
+        });
+
+
     </script>
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "tce6x70KL2500YT_Z",
+            });
+        })();
+    </script>
+
 </body>
+
 </html>
